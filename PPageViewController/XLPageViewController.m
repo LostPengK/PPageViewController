@@ -328,6 +328,15 @@ typedef void(^XLContentScollBlock)(BOOL scrollEnabled);
     _titleView.rightButton = rightButton;
 }
 
+#pragma mark getter
+-(UIViewController *)currentViewController{
+    //显示过
+    if (self.selectedIndex < self.shownVCArr.count) {
+        return self.shownVCArr[self.selectedIndex];
+    }
+    return nil;
+}
+
 #pragma mark -
 #pragma mark 切换位置方法
 - (BOOL)switchToViewControllerAdIndex:(NSInteger)index animated:(BOOL)animated {

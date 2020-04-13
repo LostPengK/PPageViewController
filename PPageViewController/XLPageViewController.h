@@ -83,7 +83,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) NSInteger selectedIndex;
 
-/**
+//显示过的vc数组，用于试图控制器缓存
+@property (nonatomic, strong,readonly) NSMutableArray *shownVCArr;
+
+//当前控制器
+@property(nonatomic,strong) UIViewController *currentViewController;
+ /**
  滚动开关 默认 开
  */
 @property (nonatomic, assign) BOOL scrollEnabled;
