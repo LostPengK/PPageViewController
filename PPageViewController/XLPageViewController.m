@@ -330,11 +330,7 @@ typedef void(^XLContentScollBlock)(BOOL scrollEnabled);
 
 #pragma mark getter
 -(UIViewController *)currentViewController{
-    //显示过
-    if (self.selectedIndex < self.shownVCArr.count) {
-        return self.shownVCArr[self.selectedIndex];
-    }
-    return nil;
+    return [self viewControllerForIndex:self.selectedIndex];
 }
 
 #pragma mark -
