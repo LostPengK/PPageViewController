@@ -124,7 +124,7 @@ typedef void(^XLContentScollBlock)(BOOL scrollEnabled);
     
     //默认可以滚动
     self.scrollEnabled = YES;
-    
+    self.switchAnimation = YES;
     //初始化上一次返回的index
     self.lastDelegateIndex = -1;
 }
@@ -312,7 +312,7 @@ typedef void(^XLContentScollBlock)(BOOL scrollEnabled);
     if (selectedIndex < 0 || selectedIndex > [self numberOfPage]) {
         [NSException raise:@"selectedIndex is not right ！！！" format:@"It is out of range"];
     }
-    BOOL switchSuccess = [self switchToViewControllerAdIndex:selectedIndex animated:true];
+    BOOL switchSuccess = [self switchToViewControllerAdIndex:selectedIndex animated:self.switchAnimation];
     if (!switchSuccess) {return;}
     self.titleView.stopAnimation = true;
 }

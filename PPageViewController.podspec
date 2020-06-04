@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PPageViewController"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "PPageViewController copy code from https://github.com/mengxianliang/XLPageViewController "
 
   # This description is used to generate tags and improve search results.
@@ -24,8 +24,8 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "源码来自 https://github.com/mengxianliang/XLPageViewController，仅制作pod供自己使用" 
-                   
+  spec.description  = "源码来自 https://github.com/mengxianliang/XLPageViewController，仅制作pod供自己使用"
+
 
   spec.homepage     = "https://github.com/LostPengK/PPageViewController"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"

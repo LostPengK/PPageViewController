@@ -93,6 +93,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL scrollEnabled;
 
+ /**
+ 切换动画 默认 yes
+ */
+@property (nonatomic, assign) BOOL switchAnimation;
 /**
  标题栏右侧按钮
  */
