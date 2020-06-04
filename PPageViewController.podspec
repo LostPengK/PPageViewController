@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PPageViewController"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "PPageViewController copy code from https://github.com/mengxianliang/XLPageViewController "
 
   # This description is used to generate tags and improve search results.
